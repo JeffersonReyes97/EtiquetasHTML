@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brayan Cristancho Probando canvas</title>
+<script>
+	window.onload = function () {
+				// Recibimos el elemento canvas
+				var elemento = document.getElementById('micanvas');
+				//Comprobación sobre si encontramos un elemento
+				//y podemos extraer su contexto con getContex(), que indica
+				//compatibilidad con canvas
+				if (elemento && elemento.getContext) {
+					//Accedo al contexto '2d' de este canvas
+					//necesario para dibujar
+				var contexto = elemento.getContext('2d');
+				if (contexto) {
+				//Si tengo el contexto '2d' es que todo ha ido bn y
+				//puede empezar a dibujar en el canvas
+				//Comienzo dibujando un rectangulo
+				contexto.fillRect(0, 0, 550, 100);
+				//Cacmbio el color de estilo de dibujo a rojo
+				contexto.fillStyle = '#cc0000';
+				//Dibujo otro rectángulo
+				contexto.fillRect(10, 10, 100, 70);
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<canvas id= "micanvas" width="200" height="100">
+	Este texto se muestra para los navegadores no compatibles
+	con canvas
+</canvas>
+</body>
+</html>
+<!--
+Script sirve para escribir código javascript en la página web
+-->
