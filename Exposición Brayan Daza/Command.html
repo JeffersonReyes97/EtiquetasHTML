@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Command</title>
+</head>
+<body>
+<menu type = "toolbar">
+<Command type = "radio" radiogroup = "alignment" checked = " checked" label = "Sena" onclick = "setAlign('Sena')">
+Mostrar Mensaje </Command>
+<br>
+<br>
+<Command type = "radio" radiogroup = "alignment" checked = " checked" label = "Correo" onclick = "setAlign('Correo')">
+Mostrar Este Mensaje </Command>
+</menu>
+<script type="text/javascript">
+	function setAlign(texto){
+		alert ("parametro enviado" + texto);
+	}
+</script>
+</html>
+<!--
+Command para definir botones y accionar 
+-->
